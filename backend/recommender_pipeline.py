@@ -2,7 +2,7 @@ from models.content_filter import ContentFilter
 from models.logistic_regression import LogisticModel
 from models.kmeans_model import KMeansModel
 try:
-	from backend.models.nlp_parser import NLPParser  # type: ignore
+	from models.nlp_parser import NLPParser  # type: ignore
 except Exception:
 	# Fallback lightweight NLP vectorizer if NLPParser is not available
 	from sklearn.feature_extraction.text import TfidfVectorizer
@@ -14,9 +14,9 @@ except Exception:
 			# caller should fit on combined corpus externally. For simplicity, fit on input.
 			return self._vectorizer.fit_transform(texts)
 
-from backend.utils.resume_parser import extract_skills
-from backend.utils.pdf_to_text import extract_text_from_pdf
-from backend.db_handler import save_match, get_connection
+from utils.resume_parser import extract_skills
+from utils.pdf_to_text import extract_text_from_pdf
+from db_handler import save_match, get_connection
 import pandas as pd
 import numpy as np
 import os
