@@ -1,6 +1,6 @@
-from backend.models.content_filter import ContentFilter
-from backend.models.logistic_regression import LogisticModel
-from backend.models.kmeans_model import KMeansModel
+from models.content_filter import ContentFilter
+from models.logistic_regression import LogisticModel
+from models.kmeans_model import KMeansModel
 try:
 	from backend.models.nlp_parser import NLPParser  # type: ignore
 except Exception:
