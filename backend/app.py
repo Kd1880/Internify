@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from backend.recommender_pipeline import process_resume
-from backend.db_handler import add_user, get_user, get_matches_for_user, create_tables
+from recommender_pipeline import process_resume
+from db_handler import add_user, get_user, get_matches_for_user, create_tables
 import os
 
 
