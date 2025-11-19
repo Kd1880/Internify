@@ -1,8 +1,11 @@
 flask
-spacy
+flask-cors
 pandas
-numpy
-PyPDF2
-transformers
-torch
 scikit-learn
+numpy
+python-dotenv
+PyMuPDF
+python-magic
+joblib
+scipy
+gunicorn
