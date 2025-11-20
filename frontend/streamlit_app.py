@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 # -------- CONFIG --------
-API_BASE = "http://127.0.0.1:5000"  # <-- change if your Flask runs elsewhere
+API_BASE = "https://internify-po1q.onrender.com"  # <-- change if your Flask runs elsewhere
 
 st.set_page_config(page_title="Internify", layout="wide")
 st.title("⚡ Internify — Resume → Job Matches")
