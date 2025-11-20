@@ -9,3 +9,4 @@ python-magic
 joblib
 scipy
 gunicorn
+PyPDF2
